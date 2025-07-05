@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World, this is a sandbox!!!");
+        Console.WriteLine("Hello World, this is a sandbox!");
     }
 }

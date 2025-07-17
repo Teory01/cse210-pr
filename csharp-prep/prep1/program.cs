@@ -12,7 +12,7 @@ class Program
 
         Console.WriteLine($"Your name  is {last}, {first} {last}.");
 
-        if (last.ToLower() == "idahosa-sunny")
+        if (last.ToLower() == "Teo-Iyalla")
         {
             Console.WriteLine("nice");
         }

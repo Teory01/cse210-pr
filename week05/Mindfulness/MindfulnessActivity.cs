@@ -51,7 +51,7 @@ public abstract class MindfulnessActivity
         {
             Console.Write($"{i} ");
             Thread.Sleep(1000);
-            Console.Write("\b\b");
+            Console.Write("\b \b");
         }
     }
 

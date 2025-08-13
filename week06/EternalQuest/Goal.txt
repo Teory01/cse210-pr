@@ -1,0 +1,13 @@
+150
+
+SimpleGoal|Read a Book|Finish reading a novel|50|True
+
+EternalGoal|Daily Exercise|Do at least 30 minutes of physical activity|10
+
+ChecklistGoal|Attend Study Group|Join the weekly study session|20|3|50|2
+
+SimpleGoal|Organize Desk|Clean and arrange work desk|30|False
+
+EternalGoal|Practice Coding|Spend 1 hour coding|15
+
+ChecklistGoal|Volunteer Hours|Complete community service hours|25|5|100|4

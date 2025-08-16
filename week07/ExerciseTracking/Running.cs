@@ -1,0 +1,26 @@
+using System;
+
+public class Running : Activity
+{
+    private double _distanceKm;
+
+    public Running(DateTime date, int lengthMinutes, double distanceKm)
+        : base(date, lengthMinutes)
+    {
+        _distanceKm = distanceKm;
+    }
+
+    public override double GetDistance() => _distanceKm;
+
+    public override double GetSpeed()
+    {
+        // Speed (kph) = (distance / minutes) * 60
+        return (_distanceKm / LengthMinutes) * 60;
+    }
+
+    public override double GetPace()
+    {
+        // Pace (min per km) = minutes / distance
+        return LengthMinutes / _distanceKm;
+    }
+}

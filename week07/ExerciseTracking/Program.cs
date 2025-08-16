@@ -1,13 +1,20 @@
 using System;
+using System.Collections.Generic;
 
-// This is the main entry point of the program
 class Program
 {
-    // The Main method is the starting point of C# applications
-    // It's where the program execution begins
-    static void Main(string[] args)
+    static void Main()
     {
-        // Display a welcome message to the console
-        Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
+        List<Activity> activities = new List<Activity>
+        {
+            new Running(new DateTime(2025, 8, 10), 30, 5.0), // 5 km in 30 min
+            new Cycling(new DateTime(2025, 8, 11), 40, 20.0), // 20 kph for 40 min
+            new Swimming(new DateTime(2025, 8, 12), 25, 30)   // 30 laps
+        };
+
+        foreach (var activity in activities)
+        {
+            Console.WriteLine(activity.GetSummary());
+        }
     }
 }
